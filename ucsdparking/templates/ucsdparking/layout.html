@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+        <title>UCSD Parking</title>
+        <link rel="stylesheet" type="text/css"
+            href="{% static 'ucsdparking/css/styles.css' %}">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="{% static 'ucsdparking/javascript/javascript.js' %}"></script>
+        <meta name="description" content="Description of your page">
+        <meta name="author" content="Martim Teixeira">
+    </head>
+    <body>
+        <header class="topbar">
+            <div class="logo">
+                <a href="{% url 'ucsdparking:home' %}">
+                    <img
+                        src="{% static 'ucsdparking/images/ucsd-logo.png' %}"
+                        alt="Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="{% url 'ucsdparking:home' %}" class="{% if url_name == 'home' %}active{% endif %}">Home</a>
+                <a href="{% url 'ucsdparking:info' %}" class="{% if url_name == 'products' %}active{% endif %}">Info</a>
+                <div class="dropdown">
+                    <a href="{% url 'ucsdparking:dashboards' %}" class="{% if url_name == 'contact' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="#dashboard1">TEstetetetetetetetetetetetetete</a>
+                        <a href="#dashboard2">Dashboard 2</a>
+                        <a href="#dashboard3">Dashboard 3</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>{% block main %} {% endblock main %}</main>
+    </body>
+    <footer>
+        <div class="footer-content">
+            <p>Collect and Analyze Large Data</p>
+            <p>Presented by Martim Teixeira</p>
+            <p>&copy; 2023 Martim Teixeira</p>
+        </div>
+    </footer>
+</html>
+
