@@ -1,5 +1,27 @@
 {% extends 'ucsdparking/layout.html' %} {% block main %} {% load static %}
-<div class="hero-container">
-    <p>Test</p>
+<div class="hero-container-about">
+    <h2 class="titlesPages">About</h2>
+    <div class="body-about">
+        <p style="font-size: 20px; text-align: center;">Welcome to our comprehensive project, a pivotal component of 
+            the 'Collect and Analyze Large Data' course at the University of California - San Diego. 
+            This initiative is not just an academic exercise; it's a practical solution tailored to 
+            enhance the daily experiences of our university community. By meticulously gathering and 
+            examining extensive parking lot inventory data, we aim to shed light on the fluctuating 
+            demands of park usage throughout the year. Our objective is to provide actionable insights 
+            that facilitate better planning and resource allocation for students and staff alike. 
+            Delve into our detailed analysis and discover how we're harnessing the power of big data 
+            to foster a more efficient and accommodating campus environment.
+            <h1 style="text-align: center;">Data</h1>
+            <p style="font-size: 20px; text-align: center;">After comprehensive research, our team has procured an extensive dataset detailing parking lot occupancy across 
+                the UCSD campuses in La Jolla and Hillcrest. This rich dataset encompasses a decade-long survey of parking spaces, 
+                capturing hourly occupancy details from 8 a.m. to 5 p.m., Monday through Thursday. Spanning from 2000 to the present, 
+                it offers an in-depth view of parking dynamics over the years.</p>
+            <p style="font-size: 20px; text-align: center;">For our analysis, we focused on data post-2018, providing us with a unique opportunity to examine the impact of the 
+                COVID-19 pandemic on campus parking trends. Our approach involved dissecting the data by various categories 
+                including individual lots, structures, neighborhoods, areas, and specific locations. This granular analysis 
+                allows for a nuanced understanding of parking occupancy patterns during this unprecedented period.</p>
+            <p style="font-size: 20px; text-align: center;">You can access and explore the dataset used for this project <a href="https://rmp-wapps.ucsd.edu/TS/Survey/Parking%20Space%20Inventory/Quarterly%20Tables/Contents.html" target="_blank" style="color: white;">here</a>.</p>
+        </p>
+    </div>
 </div>
 {% endblock %}

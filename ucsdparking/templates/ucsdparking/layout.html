@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+{% load static %} {% with url_name=request.resolver_match.url_name %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -61,4 +61,4 @@
         </div>
     </footer>
 </html>
-
+{% endwith %}
