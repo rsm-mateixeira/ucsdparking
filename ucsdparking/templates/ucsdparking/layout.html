@@ -11,7 +11,10 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
             rel="stylesheet">
-        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        
+        <!-- Favicon link -->
+        <link rel="icon" href="{% static 'ucsdparking/images/icon.png' %}" type="image/png">
+    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -25,6 +28,7 @@
         <meta name="description" content="Description of your page">
         <meta name="author" content="Martim Teixeira">
     </head>
+    
     <body>
         <header class="topbar">
             <div class="logo">
@@ -36,13 +40,13 @@
             </div>
             <nav class="navbar">
                 <a href="{% url 'ucsdparking:home' %}" class="{% if url_name == 'home' %}active{% endif %}">Home</a>
-                <a href="{% url 'ucsdparking:info' %}" class="{% if url_name == 'products' %}active{% endif %}">Info</a>
+                <a href="{% url 'ucsdparking:info' %}" class="{% if url_name == 'info' %}active{% endif %}">Info</a>
                 <div class="dropdown">
-                    <a href="{% url 'ucsdparking:dashboards' %}" class="{% if url_name == 'contact' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
-                    <div class="dropdown-content">
-                        <a href="#dashboard1">TEstetetetetetetetetetetetetete</a>
-                        <a href="#dashboard2">Dashboard 2</a>
-                        <a href="#dashboard3">Dashboard 3</a>
+                    <a href="" class="{% if url_name == 'contact' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
+                        <div class="dropdown-content">
+                        <a href="{% url 'ucsdparking:dashboards' %}">Dashboard space</a>
+                        <a href="{% url 'ucsdparking:dashboards' %}">Dashboard test</a>
+                        <a href="{% url 'ucsdparking:dashboards' %}">Dashboard test 2</a>
                     </div>
                 </div>
             </nav>
