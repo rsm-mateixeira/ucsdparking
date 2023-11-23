@@ -190,13 +190,37 @@ body {
     padding: 0px 100px;
 }
 
+/* Map */
+
+.hero-container-map {
+    padding-top: 92px;
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    overflow: hidden;
+    background-color: #11284a;
+    color: white;
+}
+
+/* Dashboard and map */
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust as needed */
+    height: 75vh; /* Adjust as needed, or use percentages */
+    max-width: 1200px; /* Optional, for maximum size */
+    margin: auto;
+}
+
 /* Dashboards */
 
 .hero-container-dashboard {
     padding-top: 92px;
     position: relative;
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
     overflow: hidden;
     background-color: #11284a;
     color: white;
@@ -207,9 +231,8 @@ body {
 .tableau-dashboard-container{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%; /* Adjust as needed */
-    height: 70vh; /* Adjust as needed, or use percentages */
+    min-height: 70vh; /* Adjust as needed, or use percentages */
     max-width: 1300px; /* Optional, for maximum size */
     margin: auto;
 }

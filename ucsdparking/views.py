@@ -14,4 +14,5 @@ def map_page_view(request):
 def dashboard_page_view(request):
     return render(request, 'ucsdparking/dashboard.html')
 
-
+def dashboard2_page_view(request):
+    return render(request, 'ucsdparking/dashboard2.html')

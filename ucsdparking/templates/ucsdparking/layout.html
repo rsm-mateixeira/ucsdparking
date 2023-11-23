@@ -43,11 +43,10 @@
                 <a href="{% url 'ucsdparking:info' %}" class="{% if url_name == 'info' %}active{% endif %}">Info</a>
                 <a href="{% url 'ucsdparking:map' %}" class="{% if url_name == 'map' %}active{% endif %}">Map UCSD</a>
                 <div class="dropdown">
-                    <a href="" class="{% if url_name == 'contact' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
+                    <a href="" class="{% if url_name == 'dashboards' or url_name == 'dashboards2' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
                         <div class="dropdown-content">
-                        <a href="{% url 'ucsdparking:dashboards' %}">Dashboard space</a>
-                        <a href="{% url 'ucsdparking:dashboards' %}">Dashboard test</a>
-                        <a href="{% url 'ucsdparking:dashboards' %}">Dashboard test 2</a>
+                        <a href="{% url 'ucsdparking:dashboards' %}" class="{% if url_name == 'dashboards' %}active{% endif %}">Compare Parking Lots</a>
+                        <a href="{% url 'ucsdparking:dashboards2' %}" class="{% if url_name == 'dashboards2' %}active{% endif %}">Compare Parking Spaces</a>
                     </div>
                 </div>
             </nav>
