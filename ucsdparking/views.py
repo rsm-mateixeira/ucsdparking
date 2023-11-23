@@ -8,6 +8,9 @@ def home_page_view(request):
 def info_page_view(request):
     return render(request, 'ucsdparking/info.html')
 
+def map_page_view(request):
+    return render(request, 'ucsdparking/map.html')
+
 def dashboard_page_view(request):
     return render(request, 'ucsdparking/dashboard.html')
 

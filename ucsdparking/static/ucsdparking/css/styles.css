@@ -202,6 +202,18 @@ body {
     color: white;
 }
 
+/* Dashboard and map */
+
+.tableau-dashboard-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust as needed */
+    height: 70vh; /* Adjust as needed, or use percentages */
+    max-width: 1300px; /* Optional, for maximum size */
+    margin: auto;
+}
+
 /* Footer */
 
 footer {

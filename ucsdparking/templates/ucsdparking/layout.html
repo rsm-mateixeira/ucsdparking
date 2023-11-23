@@ -41,6 +41,7 @@
             <nav class="navbar">
                 <a href="{% url 'ucsdparking:home' %}" class="{% if url_name == 'home' %}active{% endif %}">Home</a>
                 <a href="{% url 'ucsdparking:info' %}" class="{% if url_name == 'info' %}active{% endif %}">Info</a>
+                <a href="{% url 'ucsdparking:map' %}" class="{% if url_name == 'map' %}active{% endif %}">Map UCSD</a>
                 <div class="dropdown">
                     <a href="" class="{% if url_name == 'contact' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
                         <div class="dropdown-content">
