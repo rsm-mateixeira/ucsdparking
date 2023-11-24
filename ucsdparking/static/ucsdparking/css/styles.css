@@ -190,6 +190,15 @@ body {
     padding: 0px 100px;
 }
 
+.titlesPagesAbouth2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Racing Sans One', sans-serif !important;
+    font-size: 40px;
+    margin: 12px;
+}
+
 /* Map */
 
 .hero-container-map {
@@ -212,6 +221,7 @@ body {
     height: 75vh; /* Adjust as needed, or use percentages */
     max-width: 1200px; /* Optional, for maximum size */
     margin: auto;
+    margin-bottom: 50px;
 }
 
 /* Dashboards */

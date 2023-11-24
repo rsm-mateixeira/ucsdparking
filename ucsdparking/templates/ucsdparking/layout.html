@@ -40,7 +40,7 @@
             </div>
             <nav class="navbar">
                 <a href="{% url 'ucsdparking:home' %}" class="{% if url_name == 'home' %}active{% endif %}">Home</a>
-                <a href="{% url 'ucsdparking:info' %}" class="{% if url_name == 'info' %}active{% endif %}">Info</a>
+                <a href="{% url 'ucsdparking:about' %}" class="{% if url_name == 'about' %}active{% endif %}">About</a>
                 <a href="{% url 'ucsdparking:map' %}" class="{% if url_name == 'map' %}active{% endif %}">Map UCSD</a>
                 <div class="dropdown">
                     <a href="" class="{% if url_name == 'dashboards' or url_name == 'dashboards2' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
@@ -55,7 +55,7 @@
     </body>
     <footer>
         <div class="footer-content">
-            <p>Collect and Analyze Large Data</p>
+            <p>Collecting and Analyze Large Data</p>
             <p>Presented by Grace Kim, Jeremy, Martim Teixeira, Shridhar Rawat</p>
             <p>&copy; 2023 Martim Teixeira</p>
         </div>
