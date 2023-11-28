@@ -16,3 +16,12 @@ def dashboard_page_view(request):
 
 def dashboard2_page_view(request):
     return render(request, 'ucsdparking/dashboard2.html')
+
+def dashboard3_page_view(request):
+    return render(request, 'ucsdparking/dashboard3.html')
+
+def dashboard4_page_view(request):
+    return render(request, 'ucsdparking/dashboard4.html')
+
+def dashboard5_page_view(request):
+    return render(request, 'ucsdparking/dashboard5.html')

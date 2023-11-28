@@ -9,4 +9,7 @@ urlpatterns = [
     path('map', views.map_page_view, name='map'),
     path('dashboards', views.dashboard_page_view, name='dashboards'),
     path('dashboards2', views.dashboard2_page_view, name='dashboards2'),
+    path('dashboards3', views.dashboard3_page_view, name='dashboards3'),
+    path('dashboards4', views.dashboard4_page_view, name='dashboards4'),
+    path('dashboards5', views.dashboard5_page_view, name='dashboards5'),
 ]

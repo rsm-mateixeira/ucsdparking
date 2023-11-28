@@ -43,10 +43,13 @@
                 <a href="{% url 'ucsdparking:about' %}" class="{% if url_name == 'about' %}active{% endif %}">About</a>
                 <a href="{% url 'ucsdparking:map' %}" class="{% if url_name == 'map' %}active{% endif %}">Map UCSD</a>
                 <div class="dropdown">
-                    <a href="" class="{% if url_name == 'dashboards' or url_name == 'dashboards2' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
+                    <a href="" class="{% if url_name == 'dashboards' or url_name == 'dashboards2' or url_name == 'dashboards3' or url_name == 'dashboards4' or url_name == 'dashboards5' %}active{% endif %}">Dashboards <span class="dropdown-arrow">&#9662;</span></a>
                         <div class="dropdown-content">
                         <a href="{% url 'ucsdparking:dashboards' %}" class="{% if url_name == 'dashboards' %}active{% endif %}">Compare Parking Lots</a>
                         <a href="{% url 'ucsdparking:dashboards2' %}" class="{% if url_name == 'dashboards2' %}active{% endif %}">Compare Parking Spaces</a>
+                        <a href="{% url 'ucsdparking:dashboards3' %}" class="{% if url_name == 'dashboards3' %}active{% endif %}">Covid Effect</a>
+                        <a href="{% url 'ucsdparking:dashboards4' %}" class="{% if url_name == 'dashboards4' %}active{% endif %}">Parking Spaces per Parking Lot</a>
+                        <a href="{% url 'ucsdparking:dashboards5' %}" class="{% if url_name == 'dashboard5' %}active{% endif %}">Parking Space at a Specific Time</a>
                     </div>
                 </div>
             </nav>
