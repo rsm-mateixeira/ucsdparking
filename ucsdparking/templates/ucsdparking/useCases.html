@@ -1,0 +1,33 @@
+{% extends 'ucsdparking/layout.html' %} {% block main %} {% load static %}
+<div class="hero-container-about">
+    <h2 class="titlesPages">Use Cases</h2>
+    <div class="body-about">
+        <p style="font-size: 20px; text-align: center;">
+            <h1 class="titlesPagesAbouth2">Use Case 1</h1>
+            <p style="font-size: 20px; text-align: center;">After comprehensive research, our team has procured an extensive dataset detailing parking lot occupancy across 
+                the UCSD campuses in La Jolla and Hillcrest. This rich dataset encompasses a decade-long survey of parking spaces, 
+                capturing hourly occupancy details from 8 a.m. to 5 p.m., Monday through Thursday. Spanning from 2000 to the present, 
+                it offers an in-depth view of parking dynamics over the years.</p>
+            <p style="font-size: 20px; text-align: center;">
+                For our analysis, we focused on data post-2018, providing us with a unique opportunity to examine the impact of the COVID-19 pandemic on campus parking trends.
+                 Our approach involved dissecting the data by various categories including individual lots, structures, neighborhoods, areas, and specific locations. 
+                 This granular analysis allows for a nuanced understanding of parking occupancy patterns during this unprecedented period. Importantly, the data we analyzed 
+                 is based on one day of observation per parking lot per quarter, with observations taken every hour of that day. This approach ensures a comprehensive view of 
+                 parking dynamics over different times and seasons.</p>
+            <h1 class="titlesPagesAbouth2">Use Case 2</h1>
+            <p style="font-size: 20px; text-align: center;">In the initial phase of this project, we employed Python-based web scraping techniques to meticulously gather all relevant 
+                files from the specified website. This was followed by an intricate data cleansing process, during which we reformatted and 
+                restructured the data to align with our desired specifications. Given the unique and varying structures of the Excel files 
+                for each year and quarter, this task predominantly involved manual manipulation, utilizing both Excel and Power Query for 
+                optimal efficiency.
+            </p>
+            <p style="font-size: 20px; text-align: center;">Subsequent to the data refinement, we leveraged the Django framework, a sophisticated Python tool, to develop and construct the website. 
+                This phase was marked by a focus on integrating functionality with an intuitive user interface. Finally, we designed and implemented 
+                a series of comprehensive dashboards using Tableau. These dashboards were seamlessly integrated into the website, providing an 
+                interactive and visually engaging user experience.
+            </p>
+        </p>
+        <div style="padding: 15px;"></div>
+    </div>
+</div>
+{% endblock %}
