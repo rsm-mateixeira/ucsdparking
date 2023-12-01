@@ -1,30 +1,19 @@
 {% extends 'ucsdparking/layout.html' %} {% block main %} {% load static %}
 <div class="hero-container-about">
-    <h2 class="titlesPages">Use Cases</h2>
     <div class="body-about">
         <p style="font-size: 20px; text-align: center;">
-            <h1 class="titlesPagesAbouth2">Use Case 1</h1>
-            <p style="font-size: 20px; text-align: center;">After comprehensive research, our team has procured an extensive dataset detailing parking lot occupancy across 
-                the UCSD campuses in La Jolla and Hillcrest. This rich dataset encompasses a decade-long survey of parking spaces, 
-                capturing hourly occupancy details from 8 a.m. to 5 p.m., Monday through Thursday. Spanning from 2000 to the present, 
-                it offers an in-depth view of parking dynamics over the years.</p>
-            <p style="font-size: 20px; text-align: center;">
-                For our analysis, we focused on data post-2018, providing us with a unique opportunity to examine the impact of the COVID-19 pandemic on campus parking trends.
-                 Our approach involved dissecting the data by various categories including individual lots, structures, neighborhoods, areas, and specific locations. 
-                 This granular analysis allows for a nuanced understanding of parking occupancy patterns during this unprecedented period. Importantly, the data we analyzed 
-                 is based on one day of observation per parking lot per quarter, with observations taken every hour of that day. This approach ensures a comprehensive view of 
-                 parking dynamics over different times and seasons.</p>
-            <h1 class="titlesPagesAbouth2">Use Case 2</h1>
-            <p style="font-size: 20px; text-align: center;">In the initial phase of this project, we employed Python-based web scraping techniques to meticulously gather all relevant 
-                files from the specified website. This was followed by an intricate data cleansing process, during which we reformatted and 
-                restructured the data to align with our desired specifications. Given the unique and varying structures of the Excel files 
-                for each year and quarter, this task predominantly involved manual manipulation, utilizing both Excel and Power Query for 
-                optimal efficiency.
-            </p>
-            <p style="font-size: 20px; text-align: center;">Subsequent to the data refinement, we leveraged the Django framework, a sophisticated Python tool, to develop and construct the website. 
-                This phase was marked by a focus on integrating functionality with an intuitive user interface. Finally, we designed and implemented 
-                a series of comprehensive dashboards using Tableau. These dashboards were seamlessly integrated into the website, providing an 
-                interactive and visually engaging user experience.
+            <h1 class="titlesPagesAbouth2" style="font-size: 50px; color: white;">Use Case UCSD</h1>
+            <p style="font-size: 20px; text-align: center;">A faculty member at UCSD plans to schedule a meeting with students and other staff members.
+                They use the website to check the availability of parking spaces in lots close to the Rady School of Management. 
+                By viewing the dashboard, they can determine the best time to schedule the meeting, ensuring that all attendees will find parking conveniently. 
+                This tool also allows students and staff to plan their campus visits efficiently, selecting times when parking spaces are more readily available.</p>
+            <div style="padding: 20px;"></div>
+            <h1 class="titlesPagesAbouth2" style="font-size: 50px; color: white;">Use Case Rady School of Management</h1>
+            <p style="font-size: 20px; text-align: center;">Parents visiting their child at UCSD for a special event at the Rady School of Management utilize the 
+                website to check parking lot availability. They choose the years and quarters from the options in the list, related to the date of their visit to 
+                view the average availability of the parking lots, parking spaces and at the hours of the day selected. This information helps them to plan their 
+                visit better, ensuring they arrive on time for the event. They got a permit of visitor from the permits website, so it's important to check the 
+                availability of this parking spaces.
             </p>
         </p>
         <div style="padding: 15px;"></div>
